@@ -1,4 +1,4 @@
-package com.xuyz;
+package com.xuyz.Singleton;
 
 /**
  * Created by wang on 2017/3/20.
