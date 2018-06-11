@@ -1,5 +1,8 @@
 package com.xuyz.test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 功能描述：
  *
@@ -9,6 +12,8 @@ package com.xuyz.test;
  */
 public class Test0001 {
     public static void main(String[] args){
+
         System.out.print("111");
+        Map<String,Object> map = new HashMap<>();
     }
 }
