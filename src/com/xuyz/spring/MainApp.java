@@ -1,8 +1,5 @@
 package com.xuyz.spring;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 /**
  * 功能描述：
  *
@@ -13,9 +10,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainApp {
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext
-                ("/resource/Bean.xml");
-        HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
-        obj.getMessage();
+//        ApplicationContext context = new ClassPathXmlApplicationContext
+//                ("/resource/Bean.xml");
+//        HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+//        obj.getMessage();
     }
 }
