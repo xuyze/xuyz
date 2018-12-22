@@ -10,6 +10,8 @@
  */
 package com.xuyz.test;
 
+import java.util.Collections;
+
 /**
  * 〈一句话功能简述〉<br> 
  * 〈类加载器调试〉
