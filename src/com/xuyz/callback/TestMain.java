@@ -21,11 +21,14 @@ package com.xuyz.callback;
 public class TestMain {
 
     public static void main(String[] args) {
+        TestImpl test = new TestImpl();
+        test.testDemo("ceshi");
+
         TestCallBack testCallBack = new TestCallBack();
         testCallBack.testA(new Test() {
             @Override
-            public void testDemo() {
-                System.out.println("测试");
+            public void testDemo(String context) {
+                System.out.println(context);
             }
         });
     }

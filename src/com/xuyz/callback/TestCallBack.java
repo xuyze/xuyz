@@ -20,7 +20,17 @@ package com.xuyz.callback;
  */
 public class TestCallBack {
 
+    private String context;
+
     public void testA(Test test){
-        test.testDemo();
+        test.testDemo(context);
+    }
+
+    public String getContext() {
+        return context;
+    }
+
+    public void setContext(String context) {
+        this.context = context;
     }
 }

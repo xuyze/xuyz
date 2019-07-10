@@ -2,5 +2,5 @@ package com.xuyz.callback;
 
 public interface Test {
 
-    void testDemo();
+    void testDemo(String context);
 }
