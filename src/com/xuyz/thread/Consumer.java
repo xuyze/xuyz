@@ -1,7 +1,5 @@
 package com.xuyz.thread;
 
-import sun.plugin2.os.windows.SECURITY_ATTRIBUTES;
-
 import java.util.Random;
 import java.util.concurrent.BlockingDeque;
 
@@ -16,15 +14,15 @@ public class Consumer implements Runnable {
     private BlockingDeque<PCData> queue;
     private static final int SLEEPTIME = 1000;
 
-    public Consumer(BlockingDeque<PCData> queue){
+    public Consumer(BlockingDeque<PCData> queue) {
         this.queue = queue;
     }
 
     @Override
-    public void run(){
+    public void run() {
         Random r = new Random();
         try {
-            while (true){
+            while (true) {
                 PCData data = queue.take();
                 int re = data.getIntData() * data.getIntData();
                 Thread.sleep(r.nextInt(SLEEPTIME));

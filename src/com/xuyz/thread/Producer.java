@@ -18,19 +18,19 @@ public class Producer implements Runnable {
     private static AtomicInteger count = new AtomicInteger();
     private static final int SELEEPTIME = 1000;
 
-    public Producer(BlockingDeque<PCData> queue){
+    public Producer(BlockingDeque<PCData> queue) {
         this.queue = queue;
     }
 
     @Override
-    public void run(){
+    public void run() {
         PCData data = null;
         Random r = new Random();
         try {
-            while (isRunning){
+            while (isRunning) {
                 Thread.sleep(r.nextInt(SELEEPTIME));
                 data = new PCData(count.decrementAndGet());
-                if(!queue.offer(data,2, TimeUnit.SECONDS)){
+                if (!queue.offer(data, 2, TimeUnit.SECONDS)) {
 
                 }
             }
@@ -39,7 +39,8 @@ public class Producer implements Runnable {
             Thread.currentThread().interrupt();
         }
     }
-    public void stop(){
+
+    public void stop() {
         isRunning = false;
     }
 }
